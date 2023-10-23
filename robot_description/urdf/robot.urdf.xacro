@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+    <!-- <xacro:arg name="sim_mode" default="false"/> -->
+    
+    <!-- drive_plugin -->
+    <xacro:include filename="gazebo_control.xacro" />
+
+    <!-- main/core -->
+    <xacro:include filename="robot_core.xacro" />
+
+    <!-- lidar -->
+    <xacro:include filename="lidar.xacro" />
+
+    <!-- camera -->
+    <xacro:include filename="camera.xacro" />
+    <!-- <xacro:include filename="depth_camera.xacro" /> -->
+
+    <!-- face -->
+    <xacro:include filename="face.xacro" />
+    
+</robot>
